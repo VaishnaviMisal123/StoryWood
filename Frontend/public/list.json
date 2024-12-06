@@ -1,0 +1,145 @@
+[
+    {
+        "id":1,
+        "name": "Matilda",
+        "title":"The Extraordinary Girl with a Love for Books",
+        "price":"0",
+        "category":"Free",
+        "image":"https://www.madrasshoppe.com/215964-large_default/matilda-dahl-fiction-dahl-roald.jpg"
+    },
+    
+    {
+        "id":2,
+        "name": "Click",
+        "title":"The Adventure That Changed Everything",
+        "price":"0",
+        "category":"Free",
+        "image":"https://images.pangobooks.com/book_images/R8ATU5PcVrWxQR4XCLdNG9h3obD3/1659977586172_R8ATU5PcVrWxQR4XCLdNG9h3obD3?width=800&quality=85&crop=1%3A1"
+    },
+    
+    {
+        "id":3,
+        "name": "The Witcher",
+        "title":"Last Wish and Other Tales of the Monster Hunter",
+        "price":"100",
+        "category":"Fantasy",
+        "image":"https://images-na.ssl-images-amazon.com/images/I/81HZBNUf+qL._AC_UL600_SR600,600_.jpg"
+    },
+    
+    {
+        "id":4,
+        "name": "Holes",
+        "title":"Uncovering the Secrets of Green Lake",
+        "price":"0",
+        "category":"Free",
+        "image":"https://target.scene7.com/is/image/Target/GUEST_7ed24f45-f33e-4ec1-b5bf-44464496cc34?wid=488&hei=488&fmt=pjpeg"
+    },
+    
+    {
+        "id":5,
+        "name": "Shutter",
+        "title":"The Haunting Secrets Behind the Lens",
+        "price":"200",
+        "category":"Thriller",
+        "image":"https://foreveryoungadult.com/wp-content/uploads/2015/02/Featured-shutter-Courtney-Alameda-FYABC.jpg"
+    },
+    
+    {
+        "id":6,
+        "name": "Corduroy",
+        "title":"The Adventure of a Lost Teddy Bear",
+        "price":"0",
+        "category":"Free",
+        "image":"https://embed.cdn.pais.scholastic.com/v1/channels/clubs-us/products/identifiers/isbn/9780545399111/primary/renditions/500"
+    },
+    
+    {
+        "id":7,
+        "name": "Heidi",
+        "title":"A Journey to the Swiss Alps and the Heart",
+        "price":"0",
+        "category":"Free",
+        "image":"https://i.etsystatic.com/20931094/r/il/e0be7d/4081793521/il_570xN.4081793521_2qrf.jpg"
+    },
+    
+    {
+        "id":8,
+        "name": "Gone Girl",
+        "title":"A Twisted Tale of Deception and Betrayal",
+        "price":"50",
+        "category":"Thriller",
+        "image":"https://images.blinkist.io/images/books/65cb21e05168e8000d24dc0c/1_1/470.jpg"
+    },
+    
+    {
+        "id":9,
+        "name": "Stuart",
+        "title":"The Brave Adventures of a Little Mouse",
+        "price":"0",
+        "category":"Free",
+        "image":"https://images.pangobooks.com/images/bc20a1ee-76fa-4c99-8871-a93aeb42f36f?width=800&quality=85&crop=1%3A1"
+    },
+    
+    {
+        "id":10,
+        "name": "Fable",
+        "title":"The Journey to the Heart of the Kingdom",
+        "price":"20",
+        "category":"Fantasy",
+        "image":"https://prodimage.images-bn.com/pimages/9781250376671_p0_v2_s700x700.jpg"
+    },
+
+    {
+        "id":11,
+        "name": "Ugly Love",
+        "title":"A Story of Pain, Passion, and Healing",
+        "price":"100",
+        "category":"Romance",
+        "image":"https://houseofcats.blog/wp-content/uploads/2022/10/ugly-love.png"
+    },
+
+    {
+        "id":12,
+        "name": "Peter",
+        "title":"The Timeless Adventure of Neverland's Boy",
+        "price":"0",
+        "category":"Free",
+        "image":"https://images-fe.ssl-images-amazon.com/images/I/71WUaF46bHL._AC_UL600_SR600,600_.jpg"
+    },
+
+    {
+        "id":13,
+        "name": "Pollyanna",
+        "title":"The Girl Who Always Looked on the Bright Side",
+        "price":"0",
+        "category":"Free",
+        "image":"https://images.pangobooks.com/images/41acf978-4046-4093-989f-11ab5e9016b9?width=800&quality=85&crop=1%3A1"
+    },
+
+    {
+        "id":14,
+        "name": "Mistborn",
+        "title":"The Final Empire and the Battle for Power",
+        "price":"70",
+        "category":"Fantasy",
+        "image":"https://images.pangobooks.com/book_images/NsUyUE8q7qc92q79KA2u7P6rP0i1/c3aad609-677a-436e-bbf5-4aef43b71003_1080x1080?width=800&quality=85&crop=1%3A1"
+    },
+
+    {
+        "id":15,
+        "name": "Smile",
+        "title":"A Story of Friendship, Challenges, and Growth",
+        "price":"0",
+        "category":"Free",
+        "image":"https://static-ppimages.freetls.fastly.net/nielsens/9780545132060.jpg?canvas=600,600&fit=bounds&height=600&mode=max&width=600&404=default.jpg"
+    },
+
+    {
+        "id":16,
+        "name": "Hopeless",
+        "title":"A Story of Love, Loss, and Finding Hope",
+        "price":"150",
+        "category":"Romance",
+        "image":"https://guerfistore.com/cdn/shop/files/hopeless-colleen-hoover-papier-314.webp?v=1683727956"
+    }
+]
