@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { useForm } from "react-hook-form";
-import BackgroundImage from '../../public/Background.jpg';
 
 function Contact() {
     const { register, handleSubmit, formState: { errors } } = useForm();

@@ -1,17 +1,43 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import Login from './Login'
 import { useForm } from "react-hook-form";
-import BackgroundImage from '../../public/Background.jpg';
+import Image from '../../public/Image.jpg';
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
 function Signup() {
+  const location = useLocation()
+  const navigate = useNavigate()
+  const from = location.state?.from?.pathname || "/"
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
+  const onSubmit = async data => {
+    const userInfo = {
+      fullname: data.fullname,
+      email: data.email,
+      password: data.password,
+    }
+
+    await axios.post("http://localhost:4001/user/signup", userInfo)
+    .then((res) =>{
+      console.log(res.data)
+      if(res.data){
+        toast.success('Signup Successfully');
+        Navigate(from, {replace:true});
+      }
+      localStorage.setItem("Users", JSON.stringify(res.data.user))
+    }).catch((err) => {
+      if(err.response){
+        console.log(err)
+        toast.error("Error: " + err.response.data.message);
+      }
+    });
+  }
 
   return (
     <>
-      <div className='flex h-screen items-center justify-center bg-cover bg-center relative' style={{ backgroundImage: `url(${BackgroundImage})` }}>
-      <div className="absolute inset-0 bg-black opacity-40"></div>
+      <div className='flex h-screen items-center justify-center bg-cover bg-center relative' style={{ backgroundImage: `url(${Image})` }}>
+      <div className="absolute inset-0 bg-white opacity-40"></div>
       <div className="relative z-10 bg-white dark:bg-slate-900 dark:text-white rounded-lg shadow-lg p-8 w-[400px]">
     <form onSubmit={handleSubmit(onSubmit)} method="dialog">
       {/* if there is a button in form, it will close the modal */}
@@ -21,9 +47,9 @@ function Signup() {
     <div className='mt-4 space-y-2'>
         <span>Name</span>
         <br />
-        <input type="text" placeholder='Enter your fullname' className='w-80 px-3 py-1 border rounded-md outline-none dark:bg-slate-900 dark:text-white' {...register("name", { required: true })}  />
+        <input type="text" placeholder='Enter your fullname' className='w-80 px-3 py-1 border rounded-md outline-none dark:bg-slate-900 dark:text-white' {...register("fullname", { required: true })}  />
         <br />
-        {errors.name && <span className='text-sm text-red-500'>This field is required</span>}
+        {errors.fullname && <span className='text-sm text-red-500'>This field is required</span>}
     </div>
     {/* Email */}
     <div className='mt-4 space-y-2'>
