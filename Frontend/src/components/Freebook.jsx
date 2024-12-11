@@ -61,7 +61,7 @@ const Freebook = () => {
       <div className='max-w-screen-2xl container mx-auto md:px-20 px-4'>
         <div>
         <h1 className='font-semibold text-xl pb-2 text-pink-500'>Free Offered Courses</h1>
-        <p>🎓 Unlock your potential with our Free Offered Courses! Dive into a wide range of topics designed to empower and inspire you—absolutely free. Start learning today and take the first step towards your goals! 🌟📘</p>
+        <p>Unlock your potential with our Free Offered Courses! Dive into a wide range of topics designed to empower and inspire you—absolutely free. Start learning today and take the first step towards your goals! </p>
         </div>
       <div>
       <Slider {...settings}>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { GiBookCover } from "react-icons/gi";
 import Login from './Login';
 import { useAuth } from '../context/AuthProvider';
 import Logout from './Logout';
@@ -48,7 +49,7 @@ const Navbar = () => {
     );
   return (
     <>
-        <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 dark:bg-slate-900 dark:text-white ${
+        <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 bg-cover dark:bg-slate-900 dark:text-white ${
         sticky ? "sticky-navbar shadow-md bg-base-200 dark:bg-slate-800 dark:text-white duration-300 transition-all ease-in-out" : ""}`}>
         <div className="navbar">
   <div className="navbar-start">
@@ -73,7 +74,7 @@ const Navbar = () => {
         {navItems}
       </ul>
     </div>
-    <a className="text-2xl font-bold cursor-pointer text-pink-500">StoryWood</a>
+    <a className="text-2xl font-bold cursor-pointer text-pink-500 flex items-center"><GiBookCover />StoryWood</a>
   </div>
   <div className="navbar-end space-x-3">
   <div className="navbar-center hidden lg:flex">
